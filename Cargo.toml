@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "api",
+    "frontend",
+
+    #Internal
+    "common"
+]

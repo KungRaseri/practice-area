@@ -1,0 +1,21 @@
+[package]
+name = "api"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+common = { version = "0.0.1", path = "../common" }
+actix = "0.13.0"
+actix-web = {version = "4.3.1", features = ["openssl"]}
+openssl = "0.10.52"
+actix-rt = "2.8.0"
+serde = {version = "1.0.163", features = ["derive"]}
+serde_json = "1.0.96"
+dotenvy = "0.15.7"
+config = "0.13.3"
+chrono = {version = "0.4.24", features = ["serde", "rustc-serialize"]}
+cuid = "1.3.1"
+diesel = { version = "2.0.4", features = ["chrono", "postgres", "r2d2"] }
+cargo-watch = "8.4.0"
