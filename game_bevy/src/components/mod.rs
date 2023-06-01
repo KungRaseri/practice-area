@@ -7,6 +7,11 @@ pub struct Player;
 pub struct Enemy;
 
 #[derive(Component)]
+pub struct EnemyAI;
+
+impl EnemyAI {}
+
+#[derive(Component)]
 pub struct AnimationIndices {
     pub first: usize,
     pub last: usize,
